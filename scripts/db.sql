@@ -7,6 +7,6 @@ update pg_database set datistemplate = TRUE where datname = 'template1';
 \c template1
 update pg_database set datallowconn = FALSE where datname = 'template0';
 create user msf;
-alter user msf with encrypted password 'MyS3cr$t';
+alter user msf with encrypted password 'd3cr3yp7$7h15P455w0rd!';
 alter user msf CREATEDB;
 \q
