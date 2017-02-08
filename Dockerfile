@@ -1,6 +1,6 @@
-FROM debian:jessie
+FROM kalilinux:kali-rolling
 
-MAINTAINER Phocean <jc@phocean.net>
+MAINTAINER dnaik-D5nypt3r <driftking9090@gmail.com>
 
 WORKDIR /opt
 
