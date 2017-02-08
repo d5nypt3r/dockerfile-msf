@@ -2,6 +2,12 @@ FROM kalilinux:kali-rolling
 
 MAINTAINER dnaik-D5nypt3r <driftking9090@gmail.com>
 
+RUN echo "deb http://repo.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/source.list
+RUN apt-get update && apt-get -y upgrade
+RUN mkdir ~/Downloads
+RUN git clone https://github.com/d5nypt3r/katoolin.git ~/Downlods/kattolin
+RUN chmod 755 ~/Downloads/katoolin/kaltoolin.py
+
 WORKDIR /opt
 
 # Base packages
@@ -15,7 +21,7 @@ RUN apt-get update && apt-get -y install \
   libapr1 libaprutil1 libsvn1 \
   libpcap-dev libsqlite3-dev libgmp3-dev \
   nasm tmux vim nmap \
-  && rm -rf /var/lib/apt/lists/*
+  
 
 # Get Metasploit
 WORKDIR /opt
