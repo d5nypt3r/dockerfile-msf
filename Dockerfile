@@ -1,6 +1,6 @@
 FROM kalilinux:kali-rolling
 
-MAINTAINER dnaik-D5nypt3r <driftking9090@gmail.com>
+MAINTAINER dnaik-D5nypt3r <naik.dhawal89@gmail.com>
 
 # Install Katoolin for installing different tools.
 RUN echo "deb http://repo.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/source.list
